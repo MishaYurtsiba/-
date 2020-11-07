@@ -1,0 +1,11 @@
+a=float(input("a="))
+n=float(input("n="))
+s=0
+m=1
+i=0
+while i<=n:
+    m=m*(a+i)
+    b=1/m
+    s+=b
+    i+=1
+str(print(s))
