@@ -1,0 +1,9 @@
+a=float(input("a="))
+b=float(input("b="))
+c=float(input("c="))
+if c<=b and b<=a:
+    print("max="+str(a**2))
+elif c<=a and a<=b:
+    print("max=" + str(b ** 2))
+elif a<=b and b<c :
+    print("max=" + str(c ** 2))
