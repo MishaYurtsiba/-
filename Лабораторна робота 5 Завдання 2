@@ -1,0 +1,17 @@
+n=int(input("n="))
+while n>=10 :
+    a1=n%10
+    n=n//10
+    a2=n%10
+    n=n//10
+    a3=n%10
+    d=a1-a2
+    d1=a2-a3
+    p = True
+    if d!=d1 :
+        p=False
+        break
+if p==True:
+    print("прогресія")
+else:
+    print("не прогресія")
