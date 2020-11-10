@@ -1,0 +1,11 @@
+import math
+x0=7
+x1=7
+n=int(input("xn="))
+i=2
+while i<=n:
+    xn=math.sin(x1)+(x0/math.cos(x1))
+    x0=x1
+    x1=xn
+    i+=1
+str(print(xn))
