@@ -1,0 +1,15 @@
+x=float(input("x="))
+n=float(input("n="))
+e=float(input("Введвть точнвсть:"))
+i=1
+s=1
+f=1
+while i<=n:
+    f=f*i
+    a=(x**i)/f
+    s=s+a
+    i=i+1
+    if a<=e:
+        break
+str(print(s))
+
