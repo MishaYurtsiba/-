@@ -1,15 +1,10 @@
-def next_el(a0,a1,a2,a3):
-    a4=a3*(1+a2)+a1/a0
-    return a4
-n=int(input("n="))
-x0=1
-x1=7
-x2=7
-x3=7
-for i in range(n):
-    x4=next_el(x0,x1,x2,x3)
-    x3=x4
-    x2=x3
-    x1=x2
-    x0=x1
-print(x3)
+def next_el(n):
+    if n==1:
+        return 1
+    elif n==2 or n==3 or n==4:
+        return 7
+    else :
+        return next_el(n-1)*(1+next_el(n-2))+next_el(n-3)/next_el(n-4)
+m=int(input("Введвть чилсо"))
+s=next_el(m)
+print(s)
